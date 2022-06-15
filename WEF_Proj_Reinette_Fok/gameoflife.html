@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game of Life</title>
 <!-- bootstrap cdn -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./gameoflife.css">
+<style>
+    /* mario font */
+    @import url('http://fonts.cdnfonts.com/css/super-mario-bros-alphabet');
+</style>
 
 </head>
 <body>
-    <div id="canvas-container"> 
+
+    <div id="header" > game <br> of life. </div>
+    <p></p>
     <div id="canvas"> </div>
 </div>
 
 <!-- buttons -->
 <div id="buttons">
- <button id="start">Start/Resume</button>  
-<button id="reset-game">Restart</button>
-<button id="pause">Pause</button>
+ <button id="start">start</button>  
+<button id="reset-game">restart</button>
+<button id="pause">pause</button>
+<button id="default">default</button>
 
 
 <div class="dropdown">
-    <button class="dropbtn">Lexicon</button>
+    <button class="dropbtn">lexicon
     <div class="dropdown-content">
-        <a href="#">Acorn</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
+        <div id="gosper">gosper glider gun</div>
+        <div id="glider">glider</div>
+        <div id="lightweight-train">lightweight train</div>
+        <div id="pulsar">pulsar</div>
+        <div id="pentadecathlon">pentadecathlon</div>
+        
     </div>
+</button>
 </div>
+<div id="slider"><img src="./images/speed-meter-svgrepo-com.svg"></div>
 </div>
 
     
@@ -44,7 +55,7 @@
 <!-- bootstrap js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="pattern.js"></script>
-<script src="index.js"></script>
+<script src="gameoflife.js"></script>
 
 </body>
 

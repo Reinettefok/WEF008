@@ -1,0 +1,96 @@
+body {
+  font-family: 'Super Mario Bros Alphabet', sans-serif;
+  padding-top: 20px;
+  background-color: #429ebd;
+  margin: 0;
+
+}
+
+#header {
+  font-family: 'Super Mario Bros Alphabet', sans-serif;
+  width: fit-content;
+  height: auto;
+  background-color: #f27f0c;
+  color: #053f5c;
+  padding: 5px 10px 5px 10px;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 0;
+  text-shadow: black 0 3px;
+  border-top: solid #9fe7f5 2px;
+  border-left: solid #9fe7f5 2px;
+  border-right: solid #053f5c 2.5px;
+  border-bottom: solid #053f5c 2.5px;
+  line-height:normal;
+  
+}
+
+canvas{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    border:solid 5px white;
+    border-radius: 10px;
+   
+}
+
+button , #slider{
+  font-size: 30px;
+  background-color: #F7AD19;
+  box-shadow: #053F5C ;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  text-align: center;
+  margin:10px;
+  border: solid 2px #053F5C ;
+  height:60px;
+  display:flex;
+  align-items: center;
+  
+}
+
+#buttons{  
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%; 
+  
+}
+
+
+  .dropdown-content {
+    color:white;
+    display: none;
+    position: absolute;
+    background-color: #053F5C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  /* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content div:hover{
+  background: #F27F0C;
+}
+
+img{
+  height:30px;
+  width:30px;
+}
+
+#slider{
+  display:flex;
+}
+
+
+

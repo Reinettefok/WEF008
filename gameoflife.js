@@ -140,7 +140,7 @@ function draw()
 
     let val = slider.value();
     frameRate(val);
-    console.log(isGameStart);
+    
     if (isGameStart == true)
     {
         generate();
@@ -217,14 +217,12 @@ function mouseDragged()
      */
     if (mouseX > unitLength * columns || mouseY > unitLength * rows || mouseX < 0 || mouseY < 0)
     {
-        console.log(mouseX, mouseY, "testing");
+      
         return;
     }
     const x = Math.floor(mouseX / unitLength);
     const y = Math.floor(mouseY / unitLength);
 
-
-    console.log("mouse dragged triggered")
     currentBoard[x][y] = 1;
 
     updateUI();
@@ -237,7 +235,7 @@ function mouseReleased()
     {
         return;
     }
-    console.log(`mouse released is triggered`)
+   
     setGameStart(false);
 
 }
@@ -276,7 +274,7 @@ function insertPattern(x, y, pattern)
 {
     
     const patternArr = pattern.split("\n");
-    console.log(patternArr)
+    
     for (let i = 0; i < patternArr.length; i++)
     {
         // i -> row
